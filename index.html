@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💌 A Message For Sarah</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            /* This will repeat your yellow checkered pattern smoothly as your friend scrolls */
+            background-image: url('background.png');
+            background-size: 250px;
+            background-repeat: repeat;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px; /* Perfect spacing between all the message containers */
+        }
+
+        /* Gray card styles matching your Canva layout */
+        .card {
+            background-color: #d9d9d9;
+            border-radius: 24px;
+            width: 100%;
+            max-width: 380px;
+            padding: 35px 24px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+            text-align: center;
+            color: #1a1a1a;
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+
+        /* Top header message badge */
+        .header-card {
+            padding: 15px;
+            border-radius: 20px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .card p {
+            margin: 0 0 18px 0;
+        }
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Centered styling for Sarah's list items */
+        .list-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .list-title {
+            font-weight: 500;
+            margin-bottom: 15px !important;
+        }
+        .list-item {
+            margin-bottom: 8px;
+        }
+
+        /* Elegant floating fade animation */
+        .fade-in {
+            animation: floatUp 1s ease-out;
+        }
+        @keyframes floatUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CARD 1: HEADER -->
+    <div class="card header-card fade-in">
+        message
+    </div>
+
+    <!-- CARD 2: MAIN LETTER TO SARAH -->
+    <div class="card fade-in">
+        <p>heyyy sarahhhh<br>how are you (i expect your good)</p>
+        <p>so basically i am writing this to thank you for always being by my side and never leaving it and for being the light at the end of my dark tunnel</p>
+        <p>and for making me laugh until my stomach hurts and Your kindness, patience, and loyalty constantly inspire me to be a better person I hope you know that I am always in your corner, ready to support you through whatever life throws your way</p>
+    </div>
+
+    <!-- CARD 3: REMINDERS LIST -->
+    <div class="card fade-in">
+        <p class="list-title">now here are a few things that remind me of you</p>
+        <div class="list-container">
+            <div class="list-item">1. dazai</div>
+            <div class="list-item">2. attack on titan</div>
+            <div class="list-item">3. hermione</div>
+            <div class="list-item">4. the sun</div>
+            <div class="list-item">5. the colour white</div>
+            <div class="list-item">6. beef jerky</div>
+            <div class="list-item">7. a ginger cat</div>
+            <div class="list-item">8. the one cat ina blender yt video</div>
+            <div class="list-item">9. most gold platted things</div>
+        </div>
+    </div>
+
+    <!-- CARD 4: CLOSING THANK YOU -->
+    <div class="card fade-in">
+        <p>there are actually no word to describe how grateful i am to have you by my side every day and i hope you know that no matter what you will always be my friends</p>
+    </div>
+
+</body>
+</html>
